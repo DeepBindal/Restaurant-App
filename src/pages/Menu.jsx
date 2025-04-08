@@ -24,7 +24,7 @@ function Menu() {
     toast.success("Item added");
   }
   return (
-    <div className=" min-h-screen bg-primary text-white py-16 px-4 md:px-12">
+    <div className="min-h-screen bg-primary text-white py-24 px-4 md:px-12">
       <h1 className="text-5xl font-bold text-center text-secondary mb-12">
         Our Menu
       </h1>
