@@ -7,6 +7,8 @@ import {
   clearCart,
 } from "../features/cart/cartSlice";
 import { Trash2, Plus, Minus, ShoppingCart } from "lucide-react";
+import Payments from "../components/Payments";
+
 
 function CartPage() {
   const { items, totalQuantity, totalPrice } = useSelector((state) => state.cart);
@@ -72,6 +74,7 @@ function CartPage() {
             >
               Clear Cart
             </button>
+            <Payments amount={totalPrice} />
           </div>
         </div>
       )}
