@@ -1,5 +1,5 @@
 const MENU = {
-    starters: [
+    Starters: [
       {
         id: "starter-1",
         name: "Samosa",
@@ -26,7 +26,7 @@ const MENU = {
       },
     ],
   
-    mainCourse: [
+    MainCourse: [
       {
         id: "main-1",
         name: "Butter Chicken",
@@ -59,7 +59,7 @@ const MENU = {
       },
     ],
   
-    biryani: [
+    Biryani: [
       {
         id: "biryani-1",
         name: "Hyderabadi Chicken Biryani",
@@ -80,7 +80,7 @@ const MENU = {
       },
     ],
   
-    breads: [
+    Breads: [
       {
         id: "bread-1",
         name: "Garlic Naan",
@@ -101,7 +101,7 @@ const MENU = {
       },
     ],
   
-    desserts: [
+    Desserts: [
       {
         id: "dessert-1",
         name: "Gulab Jamun",
@@ -122,7 +122,7 @@ const MENU = {
       },
     ],
   
-    beverages: [
+    Beverages: [
       {
         id: "drink-1",
         name: "Masala Chai",

@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar.jsx";
 import Menu from "./pages/Menu.jsx";
 import CartPage from "./pages/CartPage.jsx";
 import { Toaster } from "react-hot-toast";
+import Footer from "./components/Footer.jsx";
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/cart" element={<CartPage />} />
         </Routes>
+        <Footer />
       </div>
       <Toaster position="top-right" />
     </Router>
