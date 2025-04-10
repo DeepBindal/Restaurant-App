@@ -30,12 +30,20 @@ const Home = () => {
               Experience the royal flavors of India with our carefully crafted
               dishes
             </p>
-            <Link
-              to="/menu"
-              className="bg-[#FFD700] text-black px-8 py-3 rounded-full font-semibold hover:bg-[#FFE55C] transition-colors"
-            >
-              View Our Menu
-            </Link>
+            <div className="flex gap-2">
+              <Link
+                to="/menu"
+                className="bg-[#FFD700] text-black px-8 py-3 rounded-full font-semibold hover:bg-[#FFE55C] transition-colors"
+              >
+                View Our Menu
+              </Link>
+              <Link
+                to="/booking"
+                className="bg-[#FFD700] text-black px-8 py-3 rounded-full font-semibold hover:bg-[#FFE55C] transition-colors"
+              >
+                Book a table
+              </Link>
+            </div>
           </div>
         </ImagesSlider>
       </header>

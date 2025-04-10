@@ -6,6 +6,8 @@ import Menu from "./pages/Menu.jsx";
 import CartPage from "./pages/CartPage.jsx";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer.jsx";
+import Booking from "./pages/Booking.jsx";
+import AdminBookings from "./pages/AdminBookings.jsx";
 function App() {
   return (
     <Router>
@@ -15,6 +17,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/admin-bookings" element={<AdminBookings />} />
         </Routes>
         <Footer />
       </div>
