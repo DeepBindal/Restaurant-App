@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ImagesSlider } from "../components/ui/image-slider";
-import { AnimatedTestimonials } from "..//components/ui/animated-testimonials";
 import { Link } from "react-router-dom";
+import OurStrengths from "../components/Strengths";
+import TestimonialSection from "../components/Testimonials";
+import MenuCategories from "../components/Categories";
+
 
 const Home = () => {
   const images = [
@@ -47,30 +50,16 @@ const Home = () => {
           </div>
         </ImagesSlider>
       </header>
-      <div
-        className="relative bg-cover bg-center min-h-screen flex items-center justify-center px-4 py-16"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1569921894261-ecda0b2cc1af?q=80&w=2059&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-        }}
-      >
-        <div className="absolute inset-0 bg-opacity-80 backdrop-blur-sm"></div>
-        {/* Content */}
-        <div className="relative z-10 max-w-3xl text-center text-white space-y-6">
-          <img
-            src="https://codewithsadee.github.io/grilli/assets/images/testi-avatar.jpg"
-            alt="Customer"
-            className="w-20 h-20 rounded-full mx-auto border-2 border-secondary"
-          />
-          <p className="text-2xl italic font-semibold text-white">
-            "I wanted to thank you for inviting me down for that amazing dinner
-            the other night. The food was extraordinary."
-          </p>
-          <h4 className="text-secondary font-semibold text-lg">John Doe</h4>
-        </div>
-      </div>
+      <MenuCategories />
+      <TestimonialSection />
+      <OurStrengths />
     </div>
   );
 };
 
 export default Home;
+
+
+
+
+    
