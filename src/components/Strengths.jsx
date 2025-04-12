@@ -46,7 +46,7 @@ const cardVariant = {
 export default function OurStrengths() {
   return (
     <motion.div
-      className="min-h-screen bg-gradient-to-b from-primary to-[#1b1313] py-16 text-white text-center flex flex-col gap-5"
+      className="min-h-screen bg-gradient-to-b from-[#1b1313] to-primary py-16 text-white text-center flex flex-col gap-5"
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
@@ -74,7 +74,7 @@ export default function OurStrengths() {
         {strengths.map((item, idx) => (
           <motion.div
             key={idx}
-            className="bg-primary p-6 rounded-xl shadow-lg cursor-pointer transform transition-transform"
+            className="bg-primary p-6 rounded-xl shadow-xl cursor-pointer transform transition-transform"
             variants={cardVariant}
             whileHover={{ scale: 1.05, rotate: 0.5 }}
             transition={{ type: 'spring', stiffness: 200, damping: 10 }}
