@@ -78,7 +78,6 @@ export default function MenuCategories() {
               <h3 className="text-2xl font-bold text-yellow-600 mb-2">
                 {cat.title}
               </h3>
-              <Link to='/menu'>
                 <motion.button
                   className="bg-secondary text-black px-4 py-1.5 rounded-full font-medium shadow hover:bg-yellow-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   whileHover={{ scale: 1.05 }}
@@ -86,7 +85,7 @@ export default function MenuCategories() {
                 >
                   Explore Menu
                 </motion.button>
-              </Link>
+              
             </div>
           </motion.div>
         ))}
